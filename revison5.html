@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Example</title>
+</head>
+<body>
+
+    <h2>Function Example</h2>
+
+    <button onclick="runcode6()">Run Code</button>
+    <p id="result6"></p>
+
+    <script>
+        function runcode6() {
+            let student = ["Aman", "Riya", "Karan"];
+
+            let first = student[0];
+            let total = student.length;
+
+            student.push("Sneha");
+
+            document.getElementById("result6").innerText =
+                "First: " + first + " | " +
+                "Total: " + total + " | " +
+                "After Add: " + student;
+        }
+    </script>
+
+</body>
+</html>

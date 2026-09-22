@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event </title>
+</head>
+<body>
+
+  <!-- <h2>Events Example</h2> 
+ 
+  <button onclick="setupEvent()">Setup Event (run once)</button> 
+ 
+  <button id="clickMeBtn">Click Me!</button>  -->
+   
+  <!-- <h2>Classes Example</h2> 
+ 
+  <button onclick="runCode10()">Run Code</button> 
+ 
+  <p id="result10"></p>  -->
+
+
+  <!-- <button id="btn">Click me</button>
+  <p id="output">Hello</p> -->
+
+
+  <!-- <input type="text" id="nameInput" placeholder="Enter your name">
+  <p id="greet"></p> -->
+
+  
+  
+  
+  
+ 
+  <!-- <script> 
+    function runCode8() { 
+      
+    let name = "Riya"; 
+    let marks = 88; 
+    
+    // old way: "Name: " + name + ", Marks: " + marks 
+      // new way: use backticks ` ` and ${ } to insert variables directly 
+      let message = `Name: ${name}, Marks: ${marks}`; 
+      
+      // showing result on the page 
+      document.getElementById("result8").innerText = message; 
+      } 
+    </script> -->
+    
+    
+ 
+ 
+  <!-- <script> 
+    function setupEvent() { 
+      
+    // addEventListener "listens" for a click and runs a function when it 
+    
+    document.getElementById("clickMeBtn").addEventListener("click", function() 
+    { 
+      alert("You clicked the button!"); 
+      }); 
+      } 
+    </script> -->
+    <!-- <script> 
+      function runCode10() { 
+        
+      // class = blueprint to create similar objects easily 
+      class Student { 
+        
+      // constructor runs when a new object is created 
+      constructor(name, marks) { 
+        this.name = name; 
+        this.marks = marks; 
+        } 
+        
+        // a method (function) inside the class 
+        showResult() { 
+          return this.name + " scored " + this.marks; 
+          } 
+          } 
+          
+          // creating a new object from the class 
+          let student1 = new Student("Karan", 78); 
+          
+          // showing result on the page 
+          document.getElementById("result10").innerText = student1.showResult(); 
+    }  -->
+  <!-- </script>  -->
+  
+  
+  
+  
+  <!-- <script>
+    document.getElementById("btn").addEventListener("click",()=>{
+      document.getElementById("output").textContent="Button was Clicked!";
+      });  
+      
+    </script>   -->
+    
+    
+    
+    <!-- <script>
+      const input=document.getElementById("nameInput");
+      const greet =document.getElementById("greet");
+      
+      input.addEventListener("input",() =>{
+        greet.textContent=`Hello,${input.value}!`;
+        });
+      </script> -->
+      <!-- <ul id="taskList">
+        <li>Sample task1</li>
+        <li>Sample task2</li>
+      </ul> -->
+
+      
+      
+      <!-- <script>
+        document.getElementById("taskList").addEventListener("click",(e) => {
+          if(e.target.tagName === "LI"){
+            e.target.remove();
+          }
+        });
+      </script> -->
+
+      
+       <input type="text" id="taskInput" placeholder="Enter a task">
+      <button id="addBtn">Add</button>
+      <ul id="taskList"></ul>
+
+
+
+
+      <script>
+        document.getElementById("addBtn").addEventListener("click",() =>{
+          const input=document.getElementById("taskInput");
+          if(input.value.trim()==="") return;
+
+          const li=document.createElement("li");
+          li.textContent=input.value;
+          document.getElementById("taskList").appendChild(li);
+          input.value="";
+        });
+
+      </script>
+      
+      
+      
+      
+      
+      
+    </body>
+    </html>

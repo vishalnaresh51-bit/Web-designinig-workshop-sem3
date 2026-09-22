@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Dom example</h2>
+    <button onclick="runcode9()">Run code</button>
+    <p id="demotext">this text will change when you click Run</p>
+
+    <script>
+        function runcode9(){
+            document.getElementById("demotext").innerText="Hello! javacript changed this text";
+
+            document.getElementById("demotext").style.color="green";
+        }
+    </script>
+    
+</body>
+</html>

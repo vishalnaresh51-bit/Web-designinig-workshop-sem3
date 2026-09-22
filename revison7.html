@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h2>Function Example</h2>
+
+    <button onclick="runcode7()">Run Code</button>
+    <p id="result7"></p>
+
+    <script>
+        function runcode7(){
+
+            let student={
+                name:"vishal",
+                age:6,
+                marks:85
+            };
+            let studentName = student.name;
+            let studentAge=student["age"];
+            student.marks=90;
+            document.getElementById("result7").innerText =
+            "Name:"+studentName+"|"+
+            "Age:"+studentAge+"|"+
+            "updated marks:"+student.marks;
+
+        }
+    </script>
+    
+</body>
+</html>

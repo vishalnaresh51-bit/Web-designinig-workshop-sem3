@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Else Example</title>
+</head>
+<body>
+
+    <h2>If Else Example</h2>
+
+    <button onclick="runcode()">Run Code</button>
+    <p id="result4"></p>
+
+    <script>
+        function runcode() {
+            let marks = 75;
+
+            if (marks >= 90) {
+                document.getElementById("result4").innerText = "Grade: A";
+            }
+            else if (marks >= 60) {
+                document.getElementById("result4").innerText = "Grade: B";
+            }
+            else {
+                document.getElementById("result4").innerText = "Grade: C";
+            }
+        }
+    </script>
+
+</body>
+</html>

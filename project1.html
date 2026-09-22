@@ -1,0 +1,188 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ABC Limited Company</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .menu a {
+            display: inline-block;
+            margin-right: 8px;
+            padding: 8px 16px;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .menu a:hover {
+            background: #555;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #f0f0f0;
+        }
+
+        button {
+            padding: 6px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .book-button {
+            background: #2196F3;
+        }
+
+        .book-button:hover {
+            background: #1976D2;
+        }
+
+        .cart-button {
+            background: #4CAF50;
+        }
+
+        .cart-button:hover {
+            background: #3e8e41;
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+
+        .location-btn {
+            padding: 6px 12px;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .location-btn:hover {
+            background: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Menu -->
+    <div class="menu">
+        <h2>
+            <a href="#">Home</a>
+            <a href="#">Subject</a>
+            <a href="#">Payment</a>
+            <a href="#">Login</a>
+        </h2>
+    </div>
+
+    <!-- Subject Table -->
+    <table>
+        <tr>
+            <th>S.No</th>
+            <th>Subject</th>
+            <th>Price</th>
+            <th>Book</th>
+            <th>Add to Cart</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Physics</td>
+            <td>350</td>
+            <td>
+                <button class="book-button">Book</button>
+            </td>
+            <td>
+                <button class="cart-button">Add to Cart</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Chemistry</td>
+            <td>400</td>
+            <td>
+                <button class="book-button">Book</button>
+            </td>
+            <td>
+                <button class="cart-button">Add to Cart</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Biology</td>
+            <td>200</td>
+            <td>
+                <button class="book-button">Book</button>
+            </td>
+            <td>
+                <button class="cart-button">Add to Cart</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>Maths</td>
+            <td>300</td>
+            <td>
+                <button class="book-button">Book</button>
+            </td>
+            <td>
+                <button class="cart-button">Add to Cart</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>English</td>
+            <td>400</td>
+            <td>
+                <button class="book-button">Book</button>
+            </td>
+            <td>
+                <button class="cart-button">Add to Cart</button>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            <b>Logo</b> ABC Limited Company
+            &nbsp;&nbsp;
+
+            <a 
+                href="https://maps.google.com"
+                target="_blank"
+                class="location-btn">
+                Location (Google Map)
+            </a>
+        </p>
+    </footer>
+
+</body>
+</html>
+```
